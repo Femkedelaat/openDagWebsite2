@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: pink;
+}
+header{
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    padding:15px ;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.headerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+.headerTop h1{
+    margin: auto 0;
+    padding-top: 50px;
+    margin-left: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: pink;
+}
+.headerTop img{
+    width: 300px;
+}
+.headerNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.headerNav a{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5%;
+    text-shadow: 1px black;
+    text-decoration: none;
+    color: navy;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: pink;
+    box-shadow: 1px 3px 10px;
+
+
+}
+.headerNav a:hover{
+    background-color: navy;
+    color: pink;
+}
+.homePage{
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+}
+.homePage img{
+    width: 60%;
+    border-right: navy 4px solid;
+}
+.homepageText{
+    width: 40%;
+    background-color: navy;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 3px 10px;
+    margin: 50px 50px;
+    padding: 40px 0px;
+
+}
+.homepageText p{
+    color: pink;
+}
+p{
+    color: navy;
+    font-size: x-large;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.locationHeader{
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.headerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.locationHeader h1{
+    color: pink;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+}
+h2{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: pink;
+}
+.locations{
+    display: flex;
+}
+.location{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location img{
+    margin-top: 10px;
+    width: 95%;
+    border: 3px navy solid;
+    box-shadow: 1px 3px 10px;
+}
+.location h2{
+    color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large ;
+}
+.subjectHeader{
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+}
+.headerText h1{
+    color: pink;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+}
+.timeTableHeader{
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+}
+.teacherHeader{
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.subjects{
+    width: 65%;
+    margin: 20px;
+
+}
+.container img{
+    width: 50%;
+}
+h3{
+    color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large ;
+
+}
+.subjects p{
+    background-color: navy;
+    color: pink;
+    box-shadow: 1px 3px 10px;
+    border-radius: 10px;
+}
+.timeTable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeTable img{
+    width: 60%;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px;
+
+}
+.teachers{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.teacher{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px navy solid;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 3px 10px;
+}
+.teacher h3{
+    font-size: xx-large;
+}
+.teacher img{
+    width: 80%;
+}
+.teacher p{
+    font-size: medium;
+}
+
+@media only screen and (max-width: 768px){
+
+    .headerTop {
+        flex-direction: column;
+        width: 100%; /* Make sure the header takes full width */
+    }
+    .headerText {
+        width: 100%; /* Ensure the header text takes full width */
+    }
+    .headerTop img {
+        width: 100%; /* Make the header image full width */
+    }
+    .headerNav{
+        display: none;
+    }
+    .homePage {
+        flex-direction: column;
+        width: 100%; /* Ensure the home page takes full width */
+    }
+    .homePage img {
+        width: 100%;
+    }
+    .homepageText {
+        width: 90%; /* Ensure the text section takes full width */
+    }
+    .timeTable{
+        flex-direction: column  ;
+    }
+    .timeTable img{
+        width: 100%;
+    }
+    .teachers{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .teacher{
+        width: 90%;
+        margin: 10px;
+    }
+    .locationHeader h2{
+        display: none;
+    }
+    .locationHeader h1{
+        margin: auto;
+    }
+    .subject{
+        width: 140%;
+    }
+}
